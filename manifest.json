@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Instagram Focus",
+    "version": "1.0",
+    "description": "Oculta elementos de Instagram para mayor concentración (reels, inicio, etc.).",
+    "permissions": ["tabs", "activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://www.instagram.com/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
+  
